@@ -1,7 +1,7 @@
-import {NextPage} from "next";
+import React from "react";
+import { NextPage } from 'next';
 
-const HomePage = ()=>{
-    return <h1>Gello Home Page!!!</h1>
-
-}
-export default HomePage
+const HomePage : NextPage = () => {
+  return <h1>Hello Home Page!!!</h1>;
+};
+export default HomePage;

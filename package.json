@@ -2,14 +2,16 @@
   "name": "nextjs-express-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "nodemon --inspect server/server.ts",
-    "build": "next build",
-    "start": "cross-env NODE_ENV=production node server/server.ts"
+    "dev": "ts-node --project tsconfig.server.json server/index.ts",
+    "build:server": "tsc --project tsconfig.server.json",
+    "build:next": "next build",
+    "build": "npm run build:next && npm run build:server",
+    "start": "cross-env NODE_ENV=production node dist/index.js"
   },
   "dependencies": {
     "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "next": "latest",
     "react": "^16.13.1",

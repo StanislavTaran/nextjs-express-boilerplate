@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\n\nconst Error = ({\n  statusCode\n}) => {\n  return __jsx(\"p\", null, \"404 Error\");\n};","map":null,"metadata":{},"sourceType":"module"}
